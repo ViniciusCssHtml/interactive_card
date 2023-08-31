@@ -74,7 +74,10 @@ function validation() {
     const mm = document.querySelector('#month-MM');
     const inputValue = event.target.value.trim(); // Remove espaços em branco no início e no fim
     const errorMM = document.querySelector('.errorMM');
-
+    const maxLength = 2;
+    if (inputValue.length > maxLength) {
+      monthMM.value = inputValue.substring(0, maxLength); // Trunca o valor para o limite
+    }
     const isValidMonth = /^(0?[1-9]|1[0-2])$/.test(inputValue);
 
     if (!isValidMonth) {
@@ -93,7 +96,10 @@ function validation() {
     const errorYY = document.querySelector('.errorYY');
     const currentYear = new Date().getFullYear(); // Obtém o ano atual
     const maxLength = 2; // Definindo o máximo de caracteres para o ano
-
+    if (inputValue.length > maxLength) {
+      yearYY.value = inputValue.substring(0, maxLength); // Trunca o valor para o limite
+    }
+    const isValidMonth = /^(0?[1-9]|1[0-2])$/.test(inputValue);
     const isValidYear = /^(0[0-9]|1[0-9]|2[0-9])$/.test(inputValue); // Validação do ano de 00 a 29
 
     if (!isValidYear) {
@@ -112,7 +118,9 @@ function validation() {
     const inputValue = event.target.value.trim();
     const errorCVC = document.querySelector('.errorCVC');
     const maxLength = 3; // Definindo o máximo de caracteres para o CVC
-
+    if (inputValue.length > maxLength) {
+      cvc.value = inputValue.substring(0, maxLength); // Trunca o valor para o limite
+    }
     const isValidCVC = /^[0-9]{3}$/.test(inputValue); // Validação do CVC com 3 dígitos numéricos
 
     if (!isValidCVC) {
