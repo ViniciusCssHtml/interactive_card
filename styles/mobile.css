@@ -1,0 +1,116 @@
+@media (max-width: 1400px) {
+  .cards {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .cards {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .card-back {
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 1050px) {
+  body {
+    background-image: url('/images/bg-main-mobile.png');
+    background-size: 100% 40%;
+    background-color: #fff;
+  }
+  main {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .cards {
+    position: relative;
+    margin-top: 10px;
+    padding-top: 120px;
+  }
+  .card-name {
+    font-size: 0.8rem;
+  }
+  .card-front {
+    width: 350px;
+    height: 190px;
+  }
+  .circle-bg {
+    margin-bottom: 30px;
+  }
+  .card-number {
+    font-size: 1.3rem;
+  }
+  .card-back {
+    width: 350px;
+    height: 190px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    margin-left: 100px;
+  }
+  .cvc {
+    top: 85px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards {
+    margin-left: 0px;
+  }
+  .card-back {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  form {
+    gap: 5px;
+    justify-content: center;
+  }
+  label {
+    padding: 10px;
+  }
+  input {
+    max-width: 300px;
+  }
+  .month input {
+    width: 50px;
+  }
+  .cvc-container input {
+    width: 100px;
+  }
+  button {
+    width: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  .cards {
+    margin-left: 20px;
+  }
+  .card-front {
+    width: 300px;
+    height: 170px;
+  }
+  .circle-bg {
+    margin-bottom: 15px;
+  }
+  .card-number {
+    font-size: 1rem;
+  }
+  .card-back {
+    margin-left: 35px;
+    width: 300px;
+    height: 170px;
+  }
+  .cvc {
+    top: 73px;
+    right: 25px;
+  }
+}

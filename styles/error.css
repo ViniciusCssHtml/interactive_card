@@ -1,0 +1,35 @@
+input.error {
+  border: 1px solid red;
+}
+
+.errorName {
+  font-size: 0.8rem;
+  color: red;
+  margin-top: -4px;
+}
+
+.errorNumber {
+  font-size: 0.8rem;
+  color: red;
+  margin-top: -4px;
+}
+
+.errorMM {
+  font-size: 0.8rem;
+  color: red;
+  margin-top: -4px;
+  display: block;
+}
+
+.errorYY {
+  font-size: 0.8rem;
+  color: red;
+  margin-top: -4px;
+  display: block;
+}
+.errorCVC {
+  font-size: 0.8rem;
+  color: red;
+  margin-top: -4px;
+  display: block;
+}

@@ -1,0 +1,93 @@
+.cards {
+  display: grid;
+  gap: 40px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.card-front {
+  width: 450px;
+  height: 250px;
+  background-image: url('/images/bg-card-front.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  padding: 20px;
+  color: #fff;
+}
+
+.circle-bg {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 70px;
+}
+.circle-white {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.circle-border {
+  background-color: transparent;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+}
+
+.card-number {
+  font-size: 2rem;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  display: block;
+}
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.card-name {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.card-back {
+  width: 450px;
+  height: 250px;
+  background-image: url('/images/bg-card-back.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  padding: 20px;
+  margin-left: 50px;
+  position: relative;
+  color: #fff;
+}
+.cvc {
+  position: absolute;
+  right: 40px;
+  top: 111px;
+}
+
+.card-date {
+  display: flex;
+  align-items: center;
+}
+
+.completed {
+  display: none;
+}
+
+.completed button {
+  width: 100%;
+}
+.completed h1 {
+  color: #21092f;
+}
+.completed.ativo {
+  display: grid;
+  width: 350px;
+  justify-items: center;
+  gap: 10px;
+}
